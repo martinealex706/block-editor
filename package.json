@@ -1,0 +1,41 @@
+{
+  "name": "tip-tap-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@hocuspocus/provider": "^2.13.5",
+    "@mui/icons-material": "^5.16.6",
+    "@mui/material": "^5.16.6",
+    "@tiptap/core": "^2.5.8",
+    "@tiptap/extension-bubble-menu": "^2.5.8",
+    "@tiptap/extension-code": "^2.5.8",
+    "@tiptap/extension-code-block-lowlight": "^2.5.8",
+    "@tiptap/extension-placeholder": "^2.5.8",
+    "@tiptap/extension-text-style": "^2.5.8",
+    "@tiptap/extension-underline": "^2.5.8",
+    "@tiptap/starter-kit": "^2.5.8",
+    "@tiptap/suggestion": "^2.5.8",
+    "@tiptap/vue-3": "^2.5.8",
+    "lucide-vue-next": "^0.423.0",
+    "my-ui-library": "^0.0.6",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.40",
+    "sass": "^1.77.8",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vue-tsc": "^2.0.24"
+  }
+}
