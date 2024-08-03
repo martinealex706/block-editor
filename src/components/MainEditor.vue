@@ -15,8 +15,8 @@
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
 import StarterKit from '@tiptap/starter-kit'
 import { BubbleMenu, Editor, EditorContent } from '@tiptap/vue-3'
-import BubbleMenuButtons from './BubbleMenu.vue'
-import { Code } from '@tiptap/extension-code';
+import BubbleMenuButtons from './BubbleMenu.vue';
+import Underline from '@tiptap/extension-underline';
 
 const editor = ref(null)
 const isEditable = ref(true)
@@ -31,15 +31,12 @@ watch(isEditable, (value) => {
 
 onMounted(() => {
   editor.value = new Editor({
-    extensions: [
-      StarterKit,
-      Code
-    ],
+    extensions: [StarterKit, Underline],
     content: `
       <p>
         Hey, try to select some text here. There will popup a menu for selecting some inline styles. Remember: you have full control about content and styling of this menu.
       </p>
-    `
+    `,
   })
 })
 
