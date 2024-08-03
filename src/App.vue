@@ -1,5 +1,5 @@
 <template>
-  <div class="border w-3/4 mx-auto mt-32  ">
+  <div class="w-3/4 mx-auto mt-32">
     <TiptapEditor />
   </div>
 </template>
