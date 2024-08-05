@@ -1,16 +1,13 @@
 <template>
-  <div
-    class="bubble-menu border border-neutral-200 py-1 px-4 rounded-lg shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-white">
-    <div class="flex gap-2">
-      <button v-for="(button, index) in buttons" :key="index" @click="button.action" 
-        class="relative group/icon hover:bg-neutral-200 hover:opacity-100 rounded-lg size-8 flex items-center justify-center">
-        <img :src="button.icon" alt="icon" class="opacity-60 group-hover/icon:opacity-100"/>
-        <span
-          class="absolute -top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap opacity-0 group-hover/icon:opacity-100 text-neutral-400 transition-opacity bg-white text-xs px-2 py-1 rounded border border-gray-300">
-          {{ button.label }}
-        </span>
-      </button>
-    </div>
+  <div class="flex">
+    <button v-for="(button, index) in buttons" :key="index" @click="button.action"
+      class="relative group/icon hover:bg-neutral-200 hover:opacity-100 rounded-lg size-8 flex items-center justify-center">
+      <img :src="button.icon" alt="icon" class="opacity-60 group-hover/icon:opacity-100" />
+      <span
+        class="absolute -top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap opacity-0 group-hover/icon:opacity-100 text-neutral-400 transition-opacity bg-white text-xs px-2 py-1 rounded border border-gray-300">
+        {{ button.label }}
+      </span>
+    </button>
   </div>
 </template>
 
